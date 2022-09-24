@@ -16,13 +16,13 @@ hamburger.addEventListener('click', ()=>{
 
 //NOTICIAS
 const noticias = [
-    {img: "../img/Equipo 2.jpeg",
+    {img: "https://pbs.twimg.com/media/ELhVtUnWoAImVHd.jpg",
     titulo: "DIFUNDIENDO EL DEPORTE",
     texto: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus rerum doloremvel architecto assumenda explicabo est tempore tenetur, iure delectus!'},
-    {img: "../img/Equipo 2.jpeg",
+    {img: "https://pbs.twimg.com/media/ELhVtUnWoAImVHd.jpg",
     titulo: "CTM vs. OCC",
     texto: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus rerum doloremvel architecto assumenda explicabo est tempore tenetur, iure delectus!'},
-    {img: "../img/Equipo 2.jpeg",
+    {img: "https://pbs.twimg.com/media/ELhVtUnWoAImVHd.jpg",
     titulo: "CONVOCADO",
     texto: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus rerum doloremvel architecto assumenda explicabo est tempore tenetur, iure delectus!'},
 ]
