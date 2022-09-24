@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  z-index: 5;
+}
+
+nav {
+  height: 5rem;
+  width: 100vw;
+  background-color: #1A1A1A;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  margin-right: 30px;
+}
+
+/*Styling logo*/
+.logo {
+  padding: 1vh 1vw;
+  text-align: center;
+}
+
+.logo img {
+  margin: 10px 30px;
+  width: 3rem;
+}
+
+/*Styling Links*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 88vw;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 0 0.7vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 17.3px;
+}
+
+.nav-links li a:hover {
+  color: #AA2A30;
+  ;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  transition: all 0.7s ease;
+  width: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #1A1A1A;
+  color: white;
+}
+
+.footer .datos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 100px 90px 100px;
+}
+
+.footer .datos .escudoFooter img {
+  width: 120px;
+  padding: 40px auto;
+}
+
+.footer .datos .CTMUbicacion h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 21.3px;
+}
+
+.footer .datos .CTMUbicacion .ubicacion {
+  display: flex;
+  align-items: center;
+}
+
+.footer .datos .CTMUbicacion .ubicacion h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14.7px;
+}
+
+.footer .derechos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 30%;
+  margin: 40px auto;
+}
+
+.footer .derechos h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 8px;
+}
+
+.containerIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.containerIndex .main {
+  grid-area: main;
+  height: 100%;
+}
+
+.containerIndex .main .banner {
+  height: auto;
+}
+
+.containerIndex .main .banner .textoBanner {
+  z-index: 4;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 80px;
+}
+
+.containerIndex .main .banner .textoBanner h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 58.7px;
+  color: white;
+}
+
+.containerIndex .main .banner .imgBanner {
+  z-index: -1;
+  height: 100%;
+}
+
+.containerIndex .main .banner .imgBanner img {
+  max-width: 100%;
+}
+
+.containerIndex .main .containerBotones {
+  display: flex;
+  justify-content: center;
+}
+
+.containerIndex .main .containerBotones .btnCarousel {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+}
+
+.containerIndex .main .noticias {
+  margin: 30px 15px;
+  display: flex;
+}
+
+.containerIndex .main .noticias .noticia {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerIndex .main .noticias .noticia .imgNoticia {
+  width: 100%;
+}
+
+.containerIndex .main .noticias .noticia .logoNoticias {
+  max-width: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  background-color: #AA2A30;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 0px;
+}
+
+.containerIndex .main .noticias .noticia .tituloNoticia {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.containerIndex .main .noticias .noticia .textoNoticia {
+  font-family: 'Lato', sans-serif;
+  font-size: 13.3px;
+}
+
+.containerIndex .main .sponsors {
+  width: 100%;
+  background-image: url("../img/fondo.png");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerIndex .main .sponsors img {
+  padding: 20px;
+}
+
+.containerNoticias {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.containerNoticias .main {
+  grid-area: main;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.containerNoticias .main .imgBanner img {
+  max-width: 100%;
+}
+
+.containerNoticias .main .noticias {
+  margin: 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerNoticias .main .noticias .noticia {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.containerNoticias .main .noticias .noticia .imgNoticia {
+  width: 100%;
+}
+
+.containerNoticias .main .noticias .noticia .logoNoticias {
+  max-width: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  background-color: #AA2A30;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 0px;
+}
+
+.containerNoticias .main .noticias .noticia .tituloNoticia {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.containerNoticias .main .noticias .noticia .textoNoticia {
+  font-family: 'Lato', sans-serif;
+  font-size: 13.3px;
+}
+
+.containerNoticias .main .paginasNoticias .pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.containerNoticias .main .paginasNoticias .pagination li {
+  display: flex;
+}
+
+.containerNoticias .main .paginasNoticias .pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.containerNoticias .main .paginasNoticias .pagination li a .active {
+  color: red;
+}
+
+.containerNoticias .main .paginasNoticias .pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.containerContacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.containerContacto .main {
+  grid-area: main;
+  margin-top: 50px;
+  background-image: url("../img/fondo.png");
+}
+
+.containerContacto .main h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 58.7px;
+  color: #AA2A30;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.containerContacto .main .contacto {
+  display: flex;
+  align-items: center;
+}
+
+.containerContacto .main .contacto .ubicacionRedes {
+  margin: 100px 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.containerContacto .main .contacto .ubicacionRedes .ubicacionNegro {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.containerContacto .main .contacto .ubicacionRedes .ubicacionNegro h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.containerContacto .main .contacto .formulario .formContacto {
+  margin-left: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.containerContacto .main .contacto .formulario .formContacto .campoFormContacto {
+  margin: 30px;
+}
+
+.containerContacto .main .contacto .formulario .formContacto .campoFormContacto h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.containerContacto .main .contacto .formulario .formContacto .campoFormContacto input {
+  width: 350px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px;
+}
+
+.containerContacto .main .contacto .formulario .formContacto .campoFormContacto .campoMensaje {
+  height: 269px;
+  padding-bottom: 250px;  
+}
+
+
+.containerContacto .main .contacto .formulario .formContacto .campoFormContacto input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.main .containerBoton {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main .containerBoton .btnEnviar {
+  background-color: #AA2A30;
+  padding: 10px 20px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 50px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+
+  nav .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 85%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #1A1A1A;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: circle(50px at 10% -20%);
+    -webkit-clip-path: circle(50px at 10% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links li {
+    padding-top: 20px;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+
+  .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+
+  .nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+  .footer .datos {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer .datos .escudoFooter {
+    margin-bottom: 10px;
+  }
+
+  .footer .datos .CTMUbicacion {
+    margin-bottom: 10px;
+  }
+
+  .footer .derechos {
+    flex-direction: column;
+  }
+
+  .footer .derechos h6 {
+    padding-top: 15px;
+  }
+
+  .containerIndex .main {
+    margin-top: 60px;
+  }
+
+  .containerIndex .main .banner .textoBanner {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .containerIndex .main .banner .textoBanner h1 {
+    font-size: 50px;
+  }
+
+  .containerIndex .main .noticias {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .containerIndex .main .noticias .noticia .logoNoticias {
+    display: none;
+  }
+
+  .containerIndex .main .sponsors img {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .containerNoticias .main .noticias {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .containerNoticias .main .noticias .noticia .logoNoticias {
+    display: none;
+  }
+
+  .containerContacto .main h1 {
+    text-align: center;
+  }
+
+  .containerContacto .main .contacto {
+    flex-direction: column-reverse;
+  }
+
+  .containerContacto .main .contacto .formulario .formContacto {
+    height: 100%;
+  }
+
+  .main .containerBoton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+} 

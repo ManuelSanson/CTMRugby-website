@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="270.933mm" height="134.498mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 27093 13450"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:white;fill-opacity:0.831373}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <rect x="3" width="27088" height="13450"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2972545846192">
+   <g style="clip-path:url(#id0)">
+    <image id="pexels-pixabay-70376.jpg" x="3" y="0" width="27088" height="13450" xlink:href="fondo.contacto_Images\fondo.contacto_ImgID1.png"/>
+   </g>
+   <polygon class="fil0" points="27093,2068 27093,13450 0,13450 0,2068 "/>
+  </g>
+ </g>
+</svg>
